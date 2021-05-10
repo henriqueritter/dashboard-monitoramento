@@ -63,7 +63,7 @@ function Map() {
   return (
     <div id="page-map">
       <header>
-        <a href="/">Home</a>
+        <a href="/">Mapa</a>
         <a href="/">Painel</a>
         <a href="/">Alertas</a>
       </header>

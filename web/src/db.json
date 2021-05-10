@@ -2,7 +2,7 @@
   "cars": [
     {
       "id": 1,
-      "prefix": "1959",
+      "prefix": "TK-001",
       "board": "ABC-1234",
       "latitude": -23.50473,
       "longitude": -46.863169,
@@ -10,32 +10,32 @@
     },
     {
       "id": 2,
-      "prefix": "1960",
-      "board": "ABC-1234",
+      "prefix": "TK-002",
+      "board": "ABC-1235",
       "latitude": -23.523967,
       "longitude": -46.328468,
       "speed": 0
     },
     {
       "id": 3,
-      "prefix": "18105",
-      "board": "ABC-1234",
+      "prefix": "TK-003",
+      "board": "ABC-1236",
       "latitude": -23.526361,
       "longitude": -46.579178,
       "speed": 55
     },
     {
       "id": 4,
-      "prefix": "1972",
-      "board": "ABC-1234",
+      "prefix": "TK-004",
+      "board": "ABC-1237",
       "latitude": -23.509264,
       "longitude": -46.708864,
       "speed": 10
     },
     {
       "id": 5,
-      "prefix": "1973",
-      "board": "ABC-1234",
+      "prefix": "TK-005",
+      "board": "ABC-1238",
       "latitude": -23.789306,
       "longitude": -46.642467,
       "speed": 70
