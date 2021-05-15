@@ -3,28 +3,17 @@ import Leaflet from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
+import api from "../services/api";
+
 import truckIcon from "../images/truck-front.svg";
 import locationIcon from "../images/location.svg";
 
 import "../styles/pages/map.css";
 
-import api from "../services/api";
+// Import Interfaces
+import { ICar } from "../dtos/ICar";
+import { ILocation } from "../dtos/ILocation";
 
-interface ICar {
-  id: number;
-  prefix?: string;
-  board: string;
-  latitude: number;
-  longitude: number;
-  speed: number;
-}
-
-interface ILocation {
-  id: number;
-  description: string;
-  latitude: number;
-  longitude: number;
-}
 function Map() {
   const mapTruckIcon = Leaflet.icon({
     iconUrl: truckIcon,
