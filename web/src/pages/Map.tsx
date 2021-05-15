@@ -51,11 +51,13 @@ function Map() {
 
   return (
     <div id="page-map">
+      {/* TODO Make header a React Component */}
       <header>
         <a href="/">Mapa</a>
         <a href="/">Painel</a>
         <a href="/">Alertas</a>
       </header>
+
       <MapContainer
         center={[-23.67, -46.5]}
         zoom={10}
