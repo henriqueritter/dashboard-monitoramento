@@ -15,6 +15,8 @@ import "../styles/pages/map.css";
 import { ICar } from "../dtos/ICar";
 import { ILocation } from "../dtos/ILocation";
 
+import { useInterval } from "../hooks/useInterval";
+
 function Map() {
   const mapTruckIcon = Leaflet.icon({
     iconUrl: truckIcon,
@@ -34,21 +36,19 @@ function Map() {
   const [locations, setLocations] = useState<ILocation[]>([]);
 
   useEffect(() => {
-    api.get("/cars").then((response) => {
-      setCars(response.data);
-    });
+    // api.get("/cars").then((response) => {
+    //   setCars(response.data);
+    // });
     api.get("/locations").then((response) => {
       setLocations(response.data);
     });
   }, []);
 
-  useEffect(() => {
-    setInterval(() => {
-      api.get("/cars").then((response) => {
-        setCars(response.data);
-      });
-    }, 30000);
-  }, []);
+  useInterval(() => {
+    api.get("/cars").then((response) => {
+      setCars(response.data);
+    });
+  }, 30000);
 
   return (
     <div id="page-map">
