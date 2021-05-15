@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Leaflet from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Link } from "react-router-dom";
 
 import api from "../services/api";
 
@@ -52,10 +53,11 @@ function Map() {
   return (
     <div id="page-map">
       {/* TODO Make header a React Component */}
+
       <header>
-        <a href="/">Mapa</a>
-        <a href="/">Painel</a>
-        <a href="/">Alertas</a>
+        <Link to="/">Mapa</Link>
+        <Link to="/">Painel</Link>
+        <Link to="/">Alertas</Link>
       </header>
 
       <MapContainer
