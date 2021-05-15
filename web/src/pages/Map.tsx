@@ -36,9 +36,9 @@ function Map() {
   const [locations, setLocations] = useState<ILocation[]>([]);
 
   useEffect(() => {
-    // api.get("/cars").then((response) => {
-    //   setCars(response.data);
-    // });
+    api.get("/cars").then((response) => {
+      setCars(response.data);
+    });
     api.get("/locations").then((response) => {
       setLocations(response.data);
     });
