@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 // Hook Created by Dan Abramov, available on
 // https://overreacted.io/making-setinterval-declarative-with-react-hooks/
