@@ -58,6 +58,7 @@ function Map() {
         <Link to="/">Mapa</Link>
         <Link to="/">Painel</Link>
         <Link to="/">Alertas</Link>
+        <Link to="/form">Cadastro</Link>
       </header>
 
       <MapContainer
